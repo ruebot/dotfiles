@@ -187,3 +187,5 @@ augroup phpSyntaxOverride
   autocmd!
   autocmd FileType php call PhpSyntaxOverride()
 augroup END
+
+let g:vim_markdown_folding_disabled = 1
