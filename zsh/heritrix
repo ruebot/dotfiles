@@ -1,0 +1,2 @@
+#Heritrix environment
+export HERITRIX_HOME=/home/nruest/git/heritrix-3.1.1

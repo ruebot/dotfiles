@@ -1,0 +1,19 @@
+#Fedora/Djatoka/Java
+export FEDORA_HOME=/usr/local/fedora
+PATH=/usr/java/jdk/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:$FEDORA_HOME/server/bin:$FEDORA_HOME/client/bin:/home/fedora/bin:$HOME/bin:$HOME/bin/fits
+export CATALINA_HOME=$FEDORA_HOME/tomcat
+export DLD_LIBRARY_PATH=/usr/local/djatoka/lib/Linux-x86-64
+DLD_LIBRARY_PATH=/usr/local/djatoka/lib/Linux-x86-64
+export KAKADU_LIBRARY_PATH=/usr/local/djatoka/lib/Linux-x86-64
+KAKADU_LIBRARY_PATH=/usr/local/djatoka/lib/Linux-x86-64
+KAKADU_HOME=/usr/local/djatoka/lib/Linux-x86-64
+export KAKADU_HOME=/usr/local/djatoka/lib/Linux-x86-64
+export TESSDATA_PREFIX=/usr/local/tesseract/tesseract-data/
+export JAVA_OPTS="-Xms500m \
+ -Xmx500m \
+ -XX:MaxPermSize=128m \
+ -Djavax.net.ssl.trustStore=/usr/local/fedora/server/truststore \
+ -Djavax.net.ssl.trustStorePassword=tomcat"
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle
+export JRE_HOME=/usr/lib/jvm/java-7-oracle/jre
+export SOLR_HOME=$FEDORA_HOME/solr

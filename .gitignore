@@ -1,0 +1,11 @@
+bootstrap.sh
+irssi
+vim/.netrwhist
+.netrwhist
+zsh/credentials
+vim/bundle
+tmux/tmux/plugins
+tmux/tmux/resurrect
+vim/ftdetect
+vim/indent
+vim/syntax

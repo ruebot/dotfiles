@@ -1,0 +1,32 @@
+##------------------
+##SSH Servers alias
+##------------------
+alias rho="ssh nruest@130.63.180.18"
+alias warclight="ssh -i ~/.ssh/walk.pem ubuntu@206.12.88.112"
+alias warclight-wc="ssh -i ~/.ssh/walk.pem ubuntu@206.12.59.247"
+alias auk="ssh -i ~/.ssh/walk.pem ubuntu@206.12.88.246"
+alias auk-wc="ssh -i ~/.ssh/walk.pem ubuntu@206.12.99.173"
+alias scloud="ssh -i ~/.ssh/walk.pem ubuntu@206.12.88.239"
+alias scloud-wc="ssh -i ~/.ssh/walk.pem ubuntu@206.12.59.246"
+alias tuna="ssh ruestn@tuna.cs.uwaterloo.ca"
+
+alias datathon1="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.242"
+alias datathon2="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.131"
+alias datathon3="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.168"
+alias datathon4="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.195"
+alias datathon5="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.240"
+alias datathon6="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.189"
+
+##-------------------
+## Personnal Aliases
+##-------------------
+alias open='xdg-open'
+alias apt-get='sudo apt-get'
+alias update='sudo apt-get update'
+alias mkdir="mkdir -p"
+alias h="history"
+alias j="jobs -l"
+alias which="type -a"
+alias ..="cd .."
+alias path="echo -e ${PATH//:/\\n}"
+alias ls="ls --color=auto"

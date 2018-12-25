@@ -1,0 +1,3 @@
+export EDITOR="vim"
+export LD_PRELOAD="$HOME/git/stderred/build/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
+#needed for https://github.com/sickill/stderred/
