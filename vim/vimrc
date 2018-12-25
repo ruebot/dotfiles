@@ -33,6 +33,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'lervag/vimtex'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -189,3 +190,4 @@ augroup phpSyntaxOverride
 augroup END
 
 let g:vim_markdown_folding_disabled = 1
+let g:polyglot_disabled = ['latex']
