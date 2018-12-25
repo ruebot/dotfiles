@@ -1,52 +1,63 @@
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
-	ui = true
-	pager = true
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
+
 [color "diff"]
-	meta = yellow
-	frag = magenta bold
-	old = red bold
-	new = green bold
-	commit = yellow bold
-	whitespace = red reverse
+  meta = yellow
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  commit = yellow bold
+  whitespace = red reverse
+
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
+
 [diff]
-	tool = vimdiff
+  tool = vimdiff
+
 [user]
-	name = nruest
-	email = ruestn@gmail.com
-	editor = vim
-	signingkey = 0E1080CD
+  name = nruest
+  email = ruestn@gmail.com
+  editor = vim
+  signingkey = 0E1080CD
+
 [github]
-	user = ruebot
+  user = ruebot
+
 [alias]
-	st = status
-	ci = commit
-	co = checkout
-	br = branch
-	tree = log --graph --pretty=oneline --decorate
-	lg = log -p
-	df = diff
-	history = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  tree = log --graph --pretty=oneline --decorate
+  lg = log -p
+  df = diff
+  history = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   staged = diff --cached
+
 [push]
-	default = simple
+  default = simple
+
 [commit]
-	gpgsign = true
+  gpgsign = true
+
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = diff-so-fancy | less --tabs=4 -RFX
+
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
