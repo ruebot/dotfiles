@@ -3,13 +3,24 @@
 ##------------------
 alias rho="ssh nruest@130.63.180.18"
 alias warclight="ssh -i ~/.ssh/walk.pem ubuntu@206.12.88.112"
-alias warclight-wc="ssh -i ~/.ssh/walk.pem ubuntu@206.12.59.247"
 alias auk="ssh -i ~/.ssh/walk.pem ubuntu@206.12.88.246"
-alias auk-wc="ssh -i ~/.ssh/walk.pem ubuntu@206.12.99.173"
 alias scloud="ssh -i ~/.ssh/walk.pem ubuntu@206.12.88.239"
-alias scloud-wc="ssh -i ~/.ssh/walk.pem ubuntu@206.12.59.246"
 alias tuna="ssh ruestn@tuna.cs.uwaterloo.ca"
+alias kappa="ssh nruest@kappa.library.yorku.ca"
+alias alpha="ssh nruest@alpha.library.yorku.ca"
+alias beta="ssh nruest@beta.library.yorku.ca"
+alias rho="ssh nruest@130.63.180.18"
+alias xi="ssh nruest@xi.library.yorku.ca"
+alias tau="ssh nruest@tau.library.yorku.ca"
+alias iota="ssh nruest@iota.library.yorku.ca"
+alias solrcloud1='ssh -i ~/.ssh/walk.pem 192.168.157.9'
+alias solrcloud2='ssh -i ~/.ssh/walk.pem 192.168.157.16'
+alias solrcloud3='ssh -i ~/.ssh/walk.pem 192.168.157.14'
+alias warclight='ssh -i ~/.ssh/walk.pem 192.168.157.12'
 
+##-------------------
+## AU Datathons
+##-------------------
 alias datathon1="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.242"
 alias datathon2="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.131"
 alias datathon3="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.168"
