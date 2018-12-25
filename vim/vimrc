@@ -93,6 +93,8 @@ nmap <Leader>t  :tabnew<CR>
 nmap <Leader>tn :tabn<CR>
 nmap <Leader>tp :tabp<CR>
 
+nmap <Leader>L :set invrelativenumber<CR>
+
 " Gist
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
