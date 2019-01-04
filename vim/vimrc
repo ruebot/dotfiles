@@ -193,3 +193,5 @@ augroup END
 
 let g:vim_markdown_folding_disabled = 1
 let g:polyglot_disabled = ['latex']
+
+runtime macros/matchit.vim
