@@ -46,6 +46,7 @@
   df = diff
   history = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   staged = diff --cached
+	ctags = !.git/hooks/ctags
 
 [push]
   default = simple
@@ -61,3 +62,5 @@
   oldHighlight = red bold 52
   newNormal = green bold
   newHighlight = green bold 22
+[init]
+	templatedir = ~/.git_template

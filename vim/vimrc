@@ -35,6 +35,9 @@ Plugin 'tpope/vim-endwise'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'lervag/vimtex'
 Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rake'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
