@@ -1,5 +1,7 @@
 PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin:/home/nruest/.local/bin:/snap/bin
 PATH=$HOME/bin:$PATH:$HOME/bin
+export DEBFULLNAME="Nick Ruest"
+export DEBEMAIL="ruestn@gmail.com"
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export GPG_TTY=$(tty)
