@@ -49,6 +49,8 @@ Plugin 'ekalinin/dockerfile.vim'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'Vimjas/vim-python-pep8-indent'
+Plugin 'nvie/vim-flake8'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -171,6 +173,10 @@ endfunction
 autocmd BufWritePre *.module,*.install,*.inc :call StripTrailingWhitespace()
 
 let g:syntastic_php_phpcs_args="--standard=Drupal --extensions=php,module,inc,install,test,profile,theme"
+let g:syntastic_python_flake8_exec = 'python3'
+let g:syntastic_python_flake8_args = ['-m', 'flake8']
+let g:syntastic_python_checkers = ['python3']
+
 if has('statusline')
   set laststatus=2
   " Broken down into easily includeable segments
