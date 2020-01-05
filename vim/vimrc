@@ -24,7 +24,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ap/vim-css-color'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'leshill/vim-json'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-rails'
 Plugin 'niklasl/vim-rdf'
@@ -39,6 +38,17 @@ Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-commentary'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'mattn/emmet-vim'
+Plugin 'elzr/vim-json'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'chriskempson/base16-vim'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'ekalinin/dockerfile.vim'
+Plugin 'pearofducks/ansible-vim'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -84,7 +94,7 @@ set bg=dark
 let g:zenburn_high_Contrast = 1
 let g:liquidcarbon_high_contrast = 1
 let g:molokai_original = 1
-set t_Co=256
+let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme molokai
 
 " set mapleader to , instead of \

@@ -6,6 +6,7 @@ alias warclight="ssh -i ~/.ssh/walk.pem ubuntu@206.12.88.112"
 alias auk="ssh -i ~/.ssh/walk.pem ubuntu@206.12.88.246"
 alias scloud="ssh -i ~/.ssh/walk.pem ubuntu@206.12.88.239"
 alias tuna="ssh ruestn@tuna.cs.uwaterloo.ca"
+alias orca="ssh ruestn@orca.cs.uwaterloo.ca"
 alias kappa="ssh nruest@kappa.library.yorku.ca"
 alias alpha="ssh nruest@alpha.library.yorku.ca"
 alias beta="ssh nruest@beta.library.yorku.ca"
@@ -21,14 +22,16 @@ alias wlight='ssh -i ~/.ssh/walk.pem 192.168.157.12'
 ##-------------------
 ## AU Datathons
 ##-------------------
-alias datathon1="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.242"
-alias datathon2="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.131"
-alias datathon3="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.168"
-alias datathon4="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.195"
-alias datathon5="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.240"
-alias datathon6="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.189"
-
+## c16-30gb-880gb machines:
+alias datathon1="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.194"
+alias datathon2="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.181.55"
+alias datathon3="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.181.60"
+alias datathon4="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.181.52"
+alias datathon5="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.242"
+## c16-60gb-880gb machine:
+alias datathon6="ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.181.64"
 ##-------------------
+
 ## Personnal Aliases
 ##-------------------
 alias open='xdg-open'
@@ -41,3 +44,5 @@ alias which="type -a"
 alias ..="cd .."
 alias path="echo -e ${PATH//:/\\n}"
 alias ls="ls --color=auto"
+alias weather="curl wttr.in"
+alias deploy="bundle exec cap production deploy && bundle exec cap production apache:reload"

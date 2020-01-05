@@ -36,6 +36,14 @@
 [github]
   user = ruebot
 
+[pretty]
+	lo = tformat:%C(auto)%h%C(reset)%C(auto)%d%C(reset) %s %C(italic blue)%ad%C(reset) %C(241)%aN%C(reset)
+	lt =  format:%C(auto)%h%C(reset) %C(white)-%C(reset) %C(italic blue)%aD%C(reset) %C(italic cyan)(%ad)%C(reset)%C(auto)%d%C(reset)%n %C(white)⤷%C(reset) %s %C(241)- %aN <%aE>%C(reset)%n
+	lf =  format:%C(auto)%h%C(reset)%C(auto)%d%C(reset)%n%C(white)SHA-1:%C(reset)    %C(italic)%H%C(reset)%n%C(white)Author:%C(reset)   %aN %C(241)<%aE>%C(reset)%n          %C(italic blue)%aD%C(reset) %C(italic cyan)(%ad)%C(reset)%n%C(white)Commit:%C(reset)   %cN %C(241)<%cE>%C(reset)%n          %C(italic blue)%cD%C(reset) %C(italic cyan)(%cd)%C(reset)%w(0,4,4)%n%+C(bold)%s%C(reset)%n%+b%n
+	rlo = tformat:%C(auto)%h%C(reset) %C(bold yellow)(%C(red)%gd%C(bold yellow))%C(reset)%C(auto)%d%C(reset) %s %C(italic blue)%ad%C(reset) %C(241)%aN%C(reset)
+	rlt =  format:%C(auto)%h%C(reset) %C(white)-%C(reset) %C(italic blue)%aD%C(reset) %C(italic cyan)(%ad)%C(reset)%C(auto)%d%C(reset)%n %C(white)⤷%C(reset) %s %C(241)- %aN <%aE>%C(reset)%n %C(white)⤷%C(reset) %C(bold yellow)(%C(red)%gd%C(bold yellow))%C(reset) %gs %C(241)- %gN <%gE>%C(reset)%n
+	rlf =  format:%C(auto)%h%C(reset)%C(auto)%d%C(reset)%n%C(white)SHA-1:%C(reset)    %C(italic)%H%C(reset)%n%C(white)Author:%C(reset)   %aN %C(241)<%aE>%C(reset)%n          %C(italic blue)%aD%C(reset) %C(italic cyan)(%ad)%C(reset)%n%C(white)Commit:%C(reset)   %cN %C(241)<%cE>%C(reset)%n          %C(italic blue)%cD%C(reset) %C(italic cyan)(%cd)%C(reset)%n%C(white)Reflog:%C(reset)   %gN %C(241)<%gE>%C(reset)%n          %C(italic)%gs%C(reset)%w(0,4,4)%n%+C(bold)%s%C(reset)%n%+b%n
+
 [alias]
   st = status
   ci = commit
@@ -44,9 +52,44 @@
   tree = log --graph --pretty=oneline --decorate
   lg = log -p
   df = diff
-  history = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  history = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   staged = diff --cached
 	ctags = !.git/hooks/ctags
+
+	# log, current branch
+	l = log --pretty=lt --graph --color --date=relative
+	lo = log --pretty=lo --graph --color --date=relative
+	lf = log --pretty=lf --graph --color --date=relative
+	lff = log --pretty=fuller --graph --color --date=relative --stat --summary
+	lp = log --pretty=lt --graph --color --date=relative --patch -c -M -C
+  ld = log --pretty=lt --graph --color --date=relative --stat --summary
+
+	# log, all branches+tags on all remotes
+	#    added: --all
+	la = log --pretty=lt --graph --color --date=relative --all
+	lao = log --pretty=lo --graph --color --date=relative --all
+	laf = log --pretty=lf --graph --color --date=relative --all
+	laff = log --pretty=fuller --graph --color --date=relative --stat --summary --all
+	lap = log --pretty=lt --graph --color --date=relative --patch -c -M -C --all
+  lad = log --pretty=lt --graph --color --date=relative --stat --summary --all
+
+	# log, all branches+tags on remotes 'origin' and 'upstream'
+	#    added: --branches='*' --tags='*' --remotes=origin --remotes=upstream
+	lg = log --pretty=lt --graph --color --date=relative --branches='*' --tags='*' --remotes=origin --remotes=upstream
+	lgo = log --pretty=lo --graph --color --date=relative --branches='*' --tags='*' --remotes=origin --remotes=upstream
+	lgf = log --pretty=lf --graph --color --date=relative --branches='*' --tags='*' --remotes=origin --remotes=upstream
+	lgff = log --pretty=fuller --graph --color --date=relative --stat --summary --branches='*' --tags='*' --remotes=origin --remotes=upstream
+	lgp = log --pretty=lt --graph --color --date=relative --patch -c -M -C --branches='*' --tags='*' --remotes=origin --remotes=upstream
+	lgd = log --pretty=lt --graph --color --date=relative --stat --summary --branches='*' --tags='*' --remotes=origin --remotes=upstream
+
+	# log, simplified by decoration
+	#    added: --all --simplify-by-decoration
+	ls = log --pretty=lt --graph --color --date=relative --all --simplify-by-decoration
+	lso = log --pretty=lo --graph --color --date=relative --all --simplify-by-decoration
+	lsf = log --pretty=lf --graph --color --date=relative --all --simplify-by-decoration
+	lsff = log --pretty=fuller --graph --color --date=relative --stat --summary --all --simplify-by-decoration
+	lsp = log --pretty=lt --graph --color --date=relative --patch -c -M -C --all --simplify-by-decoration
+  lsd = log --pretty=lt --graph --color --date=relative --stat --summary --all --simplify-by-decoration
 
 [push]
   default = simple
